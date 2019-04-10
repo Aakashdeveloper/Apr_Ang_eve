@@ -1,0 +1,19 @@
+{
+  "name": "learnnpm",
+  "version": "1.0.0",
+  "description": "this is about npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "angular"
+  ],
+  "author": "nareshit",
+  "license": "ISC",
+  "dependencies": {
+    "@aakashdeveloper/create-node-app": "^1.0.10",
+    "zone.js": "^0.9.0"
+  }
+}

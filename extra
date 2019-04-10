@@ -1,0 +1,61 @@
+> node -v
+version of node
+
+>npm node package manager
+
+> package.json
+
+javascript object notation(json)
+[
+    {
+        name:"john",
+        class:"ang"
+    },
+    {
+        name:"john1",
+        class:"Ui"
+    }
+]
+
+
+open terminal
+>navigate to folder using cd
+
+Step 1
+>npm init
+
+step2
+> answer all pop question
+
+step3
+>  yes at the end
+
+How to install package
+>  npm install <package name> / npm i <package name>
+
+>npm install
+
+
+
+local dependency
+global dependency
+
+> global install
+npm install -g @angular/cli
+
+window>
+run as admin
+
+mac/linux
+sudo npm install -g @angular/cli
+
+
+Step to setup angular 
+
+>  npm install -g @angular/cli
+>  ng new firstapp
+>  cd firstapp
+> npm start
+> http://localhost:4200
+
+@aakashdeveloper/create-node-app
