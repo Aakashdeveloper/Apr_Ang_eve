@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { BookComponent } from './book.component';
 
 @NgModule({
     // all module you will declare here
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
 
     //  all omponents and pipe
     declarations: [
-        AppComponent
+        AppComponent,
+        BookComponent
     ],
 
     // only first component

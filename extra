@@ -93,3 +93,35 @@ Routing
 >> Only one main routing
 ## help to managr routes or navbar
 */
+
+
+#File Walkthrough
+
+tslint => help to follow standard of coding (no change req)(imp)
+tsconfig => tranform code from .ts => .js (no change req)(imp)
+ReadMe => Guide or file to run application (req min change)(not imp)
+package.json=> all dependency as well as scripts(imp)
+package-lock.json => infromation of dependent package(imp)
+angular.json=> metadata contains all the path and respective file(min req)(imp)
+.gitignore=> which all thing we dont want to push on git(not imp)
+.editorconfig => contains code standard fro text editor(no change req)(not imp)
+
+>src 
+app=> contains app (max change req)(imp)
+assets => all static things(images,css,js)(max change req)
+environments => tell app is in which environments(min change req)(imp)
+browserList => static file (no change req)(not imp)
+favicon => just image(no change req)(imp)
+index.html => first file that browser will pick (imp)(min change req)
+main.ts => let which module to load(min change req)(imp)
+
+
+flow of app
+
+angular.json => main.ts => app.module.ts => app.component.ts
+
+step to create component
+> create new .ts
+> provide selector, template & class name
+> declare every component in module file
+> use selector in app.component.ts
