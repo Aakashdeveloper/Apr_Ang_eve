@@ -59,3 +59,37 @@ Step to setup angular
 > http://localhost:4200
 
 @aakashdeveloper/create-node-app
+
+
+start Command
+ng serve/ npm start
+
+on specific port
+ng serve --port 8700
+
+
+/*
+Module
+>>> one main module
+>>> can have serveral subModule
+#### We do declaration of component,pipe,othermodule,service,routing
+
+
+Component
+>>> one main Component
+>>> can have lot of other component
+#### Can have html/css/logic and some more logic
+
+Pipe
+>>> multiple pipe
+## Run time data change
+
+
+Service
+>> multiple service
+###help to connect with third party or data store
+
+Routing
+>> Only one main routing
+## help to managr routes or navbar
+*/

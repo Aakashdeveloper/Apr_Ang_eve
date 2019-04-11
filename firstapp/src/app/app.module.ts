@@ -1,18 +1,30 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    // all module you will declare here
+    imports: [
+        BrowserModule
+    ],
+
+    //  all omponents and pipe
+    declarations: [
+        AppComponent
+    ],
+
+    // only first component
+    bootstrap: [
+        AppComponent
+    ],
+
+    // all services  declare here
+    providers: []
 })
-export class AppModule { }
+
+
+
+export class AppModule {
+
+}
