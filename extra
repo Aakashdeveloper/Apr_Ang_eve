@@ -125,3 +125,17 @@ step to create component
 > provide selector, template & class name
 > declare every component in module file
 > use selector in app.component.ts
+
+//Data Bindings
+>>>>>>One Way DataBinding<<<<<<<<<
+# Data Bindings        {{}}
+# Property Bindings    []
+# Event Binding        ()
+>>>>>>Two Way DataBinding<<<<<<<<<
+# Two way Binding      [()]
+
+//Data Types
+string
+number
+boolean
+any[]
