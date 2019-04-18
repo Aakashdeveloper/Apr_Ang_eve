@@ -16,22 +16,35 @@
                 <h4>Filter on the basis of </h4>
             </div>
         </div>
-        <div class="table-responsive">
+        {{showImage}}
+        <div class="table-responsive" *ngIf="showTable">
             <table class="table">
                 <thead>
                     <tr>
+                        <th>
+                            <button class="btn btn-success"
+                                    (click)="toggleImage()">
+                                Show Image
+                            </button>
+                        </th>
                         <th>Name</th>
                         <th>Code</th>
+                        <th>Date</th>
+                        <th>Price</th>
+                        <th>Rating</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Shoes</td>
-                        <td>Dkh12e</td>
-                    </tr>
-                    <tr>
-                        <td>Balls</td>
-                        <td>Hbhj7</td>
+                <tbody >
+                    <tr *ngFor="let prod of products">
+                        <td >
+                            <img [src]="prod.imageUrl"
+                                 *ngIf="showImage"/>
+                        </td>
+                        <td>{{prod.productName}}</td>
+                        <td>{{prod.productCode}}</td>
+                        <td>{{prod.releaseDate}}</td>
+                        <td>{{prod.price}}</td>
+                        <td>{{prod.starRating}}</td>
                     </tr>
                 </tbody>
             </table>
