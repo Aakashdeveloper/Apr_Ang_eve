@@ -9,6 +9,7 @@ export class ProductComponent {
     title: String =  '****Product Listing****';
     showTable: Boolean = true;
     showImage: Boolean = false;
+    userInput:  String = 'My Search text';
 
     products: any[] = [
         {

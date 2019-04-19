@@ -139,3 +139,14 @@ string
 number
 boolean
 any[]
+
+//pipe
+Inbuilt
+> uppercase/lowercase/currency/date/titlecase/percentage
+Custome
+> Depend upon the requirnment
+
+
+API>
+movies = https://ngmusicdb.herokuapp.com/api/getMusic
+product = https://ngapi4.herokuapp.com/api/getProducts

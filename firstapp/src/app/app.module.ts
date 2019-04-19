@@ -1,21 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BookComponent } from './book.component';
 import { ProductComponent } from './products/product.component';
+// import MyUpperCasePipe from './products/myUpper.pipe';
 
 @NgModule({
     // all module you will declare here
     imports: [
-        BrowserModule
+        BrowserModule,
+        FormsModule
     ],
 
-    //  all omponents and pipe
+    //  all components and pipe
     declarations: [
         AppComponent,
         BookComponent,
-        ProductComponent
+        ProductComponent,
+        // MyUpperCasePipe
     ],
 
     // only first component

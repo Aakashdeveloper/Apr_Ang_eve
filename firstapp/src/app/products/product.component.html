@@ -8,12 +8,15 @@
                 Product Search
             </div>
             <div class="col-md-3">
-                <input type="text" placeholder="enter your search"/>
+                <input type="text" 
+                        placeholder="enter your search"
+                        [(ngModel)]="userInput"/>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <h4>Filter on the basis of </h4>
+                <h4>Filter on the basis of 
+                    {{userInput}} </h4>
             </div>
         </div>
         {{showImage}}
@@ -24,7 +27,7 @@
                         <th>
                             <button class="btn btn-success"
                                     (click)="toggleImage()">
-                                Show Image
+                                {{showImage ? 'Hide Image':'Show Image' }}
                             </button>
                         </th>
                         <th>Name</th>
@@ -40,10 +43,10 @@
                             <img [src]="prod.imageUrl"
                                  *ngIf="showImage"/>
                         </td>
-                        <td>{{prod.productName}}</td>
-                        <td>{{prod.productCode}}</td>
+                        <td>{{prod.productName | uppercase}}</td>
+                        <td>{{prod.productCode | lowercase}}</td>
                         <td>{{prod.releaseDate}}</td>
-                        <td>{{prod.price}}</td>
+                        <td>{{prod.price | currency:'AUD'}}</td>
                         <td>{{prod.starRating}}</td>
                     </tr>
                 </tbody>
