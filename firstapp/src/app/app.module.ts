@@ -5,7 +5,10 @@ import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BookComponent } from './book.component';
 import { ProductComponent } from './products/product.component';
-// import MyUpperCasePipe from './products/myUpper.pipe';
+import {MyUpperCasePipe} from './products/myUpper.pipe';
+import { MyLowerCasePipe } from './products/myLowerCase.pipe';
+import { MyCasePipe } from './products/myCasePipe.pipe';
+import { MyDiscountPipe } from './products/discount.pipe';
 
 @NgModule({
     // all module you will declare here
@@ -19,7 +22,10 @@ import { ProductComponent } from './products/product.component';
         AppComponent,
         BookComponent,
         ProductComponent,
-        // MyUpperCasePipe
+        MyUpperCasePipe,
+        MyLowerCasePipe,
+        MyCasePipe,
+        MyDiscountPipe
     ],
 
     // only first component

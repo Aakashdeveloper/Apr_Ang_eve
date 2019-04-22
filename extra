@@ -150,3 +150,6 @@ Custome
 API>
 movies = https://ngmusicdb.herokuapp.com/api/getMusic
 product = https://ngapi4.herokuapp.com/api/getProducts
+
+https://www.w3schools.com/jsref/jsref_filter.asp 
+https://www.w3schools.com/jsref/jsref_indexof.asp
