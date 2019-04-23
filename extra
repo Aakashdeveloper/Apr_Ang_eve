@@ -153,3 +153,19 @@ product = https://ngapi4.herokuapp.com/api/getProducts
 
 https://www.w3schools.com/jsref/jsref_filter.asp 
 https://www.w3schools.com/jsref/jsref_indexof.asp
+
+
+var a = 10
+var a
+a = 10
+
+var = redeclare & reassign
+let = reassign but cannot redeclare
+const = nor reassign nor redeclare
+
+
+function add(a,b){
+    return a+b
+}
+
+const add = (a,b) => { return a+b }

@@ -38,7 +38,7 @@
                     </tr>
                 </thead>
                 <tbody >
-                    <tr *ngFor="let prod of products">
+                    <tr *ngFor="let prod of products | searchFilter:userInput:">
                         <td >
                             <img [src]="prod.imageUrl"
                                  *ngIf="showImage"/>
