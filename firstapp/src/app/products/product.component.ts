@@ -21,7 +21,7 @@ export class ProductComponent {
             releaseDate: 'May 21, 2016',
             description: 'Curved claw steel hammer',
             price: 28.9,
-            starRating: 4.8,
+            starRating: 2.5,
             imageUrl: 'https://i.ibb.co/TrR7jkM/hammer.png'
         },
         {
@@ -54,7 +54,7 @@ export class ProductComponent {
             releaseDate: 'May 15, 2016',
             description: '15-inch steel blade hand saw',
             price: 31.55,
-            starRating: 3.7,
+            starRating: 2.2,
             imageUrl: 'https://i.ibb.co/vmS3kRH/saw.png'
         }
     ];

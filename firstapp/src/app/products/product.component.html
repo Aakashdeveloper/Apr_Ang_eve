@@ -15,8 +15,9 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <h4>Filter on the basis of 
-                    {{userInput}} </h4>
+                <h4>Number of result is :
+                    {{(products | searchFilter:userInput).length}}
+                </h4>
             </div>
         </div>
         {{showImage}}
@@ -38,7 +39,7 @@
                     </tr>
                 </thead>
                 <tbody >
-                    <tr *ngFor="let prod of products | searchFilter:userInput:">
+                    <tr *ngFor="let prod of products | searchFilter:userInput">
                         <td >
                             <img [src]="prod.imageUrl"
                                  *ngIf="showImage"/>
@@ -47,7 +48,9 @@
                         <td>{{prod.productCode | mycase:'upper'}}</td>
                         <td>{{prod.releaseDate}}</td>
                         <td>{{prod.price | discount:5 | currency:'AUD'}}</td>
-                        <td>{{prod.starRating}}</td>
+                        <td>
+                            <app-star></app-star>
+                        </td>
                     </tr>
                 </tbody>
             </table>

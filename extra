@@ -169,3 +169,19 @@ function add(a,b){
 }
 
 const add = (a,b) => { return a+b }
+
+///Git////
+>> 1st time
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/learn_git.git
+git push -u origin master
+
+>>2nd and all
+git add .
+git commit -m "first commit"
+git push master
+
+git branch -a  =>> to check all branch
+git checkout -b newFeature  =>>> new branch
