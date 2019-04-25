@@ -1,3 +1,8 @@
+<h3 [ngStyle]="{color:getColor()}"
+    [ngClass]="{online: serverStatus === 'Online'}">
+    Server status is {{serverStatus}}
+</h3>
+<br/>
 <div class="panel panel-primary">
     <div class="panel-heading">
         {{title}}
@@ -42,12 +47,15 @@
                     <tr *ngFor="let prod of products | searchFilter:userInput">
                         <td >
                             <img [src]="prod.imageUrl"
-                                 *ngIf="showImage"/>
+                                 *ngIf="showImage"
+                                 [style.width.px]="imageSize"/>
                         </td>
-                        <td>{{prod.productName | mycase:'lower':1}}</td>
+                        <td style="color:blueviolet">{{prod.productName | mycase:'lower':1}}</td>
                         <td>{{prod.productCode | mycase:'upper'}}</td>
                         <td>{{prod.releaseDate}}</td>
-                        <td>{{prod.price | discount:5 | currency:'AUD'}}</td>
+                        <td [ngStyle]="{'background-color':prod.price<32?'tomato':'skyblue'}">
+                            {{prod.price | discount:5 | currency:'AUD'}}
+                        </td>
                         <td>
                             <app-star></app-star>
                         </td>

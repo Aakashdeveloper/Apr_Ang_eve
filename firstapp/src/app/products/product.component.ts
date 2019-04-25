@@ -3,7 +3,14 @@ import { IProduct } from './product.model';
 
 @Component({
     selector: 'app-product',
-    templateUrl: './product.component.html'
+    templateUrl: './product.component.html',
+    // styles: ['thead{color:red}', 'h4{color:teal}'],
+    styleUrls: ['./product.component.css'],
+    styles: [
+        `.online{
+           background-color:wheat
+        }`
+    ]
 })
 
 export class ProductComponent {
@@ -11,6 +18,12 @@ export class ProductComponent {
     showTable: Boolean = true;
     showImage: Boolean = false;
     userInput: string ;
+    imageSize: number = 100;
+    serverStatus: String = 'offline';
+
+    constructor() {
+        this.serverStatus = Math.random() > 0.5 ? 'Online' : 'Offline';
+    }
 
     products: IProduct[] = [
         {
@@ -61,5 +74,9 @@ export class ProductComponent {
 
     toggleImage(): void {
         this.showImage = !this.showImage;
+    }
+
+    getColor() {
+        return this.serverStatus === 'Online' ? 'green' : 'red';
     }
 }
