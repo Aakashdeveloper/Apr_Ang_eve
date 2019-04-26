@@ -185,3 +185,7 @@ git push master
 
 git branch -a  =>> to check all branch
 git checkout -b newFeature  =>>> new branch
+
+
+parent to child => Input and it will act as Property
+child to parent => Output and it will act as event
