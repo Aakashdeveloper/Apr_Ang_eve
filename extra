@@ -189,3 +189,11 @@ git checkout -b newFeature  =>>> new branch
 
 parent to child => Input and it will act as Property
 child to parent => Output and it will act as event
+
+var a = 10
+var b = "my age is "+a 
+var c = `my age is ${a}`
+
+dependency Injection=>
+when we get instance of object from any external source rather than
+creating itself

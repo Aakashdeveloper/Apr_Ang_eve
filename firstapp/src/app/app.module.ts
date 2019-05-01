@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BookComponent } from './book.component';
@@ -11,12 +12,14 @@ import { MyCasePipe } from './products/myCasePipe.pipe';
 import { MyDiscountPipe } from './products/discount.pipe';
 import { ProductSearchPipe } from './products/product-search.pipe';
 import { StarComponent } from './shared/star.component';
+import { ProductService } from './products/product.service';
 
 @NgModule({
     // all module you will declare here
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
 
     //  all components and pipe
@@ -38,7 +41,9 @@ import { StarComponent } from './shared/star.component';
     ],
 
     // all services  declare here
-    providers: []
+    providers: [
+        ProductService
+    ]
 })
 
 
