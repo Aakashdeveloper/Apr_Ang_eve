@@ -197,3 +197,12 @@ var c = `my age is ${a}`
 dependency Injection=>
 when we get instance of object from any external source rather than
 creating itself
+
+
+/*************
+    CLI
+**************/
+
+ng generate component home/ ng g c home
+ng g s myservice
+ng g p mypipe
