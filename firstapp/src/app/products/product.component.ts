@@ -15,7 +15,7 @@ import { ProductService } from './product.service';
 
 export class ProductComponent implements OnInit {
     title: String =  '****Product Listing****';
-    showTable: Boolean = true;
+    showTable: Boolean = false;
     showImage: Boolean = false;
     userInput: string ;
     imageSize: number = 100;
