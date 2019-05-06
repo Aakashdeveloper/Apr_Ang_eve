@@ -3,6 +3,9 @@
           Product Details Page
         </div>
         <div class="panel-body">
-            Product Details Content
+            Product Details Content for {{id}}
+            <h1>{{details[0].productName}}</h1>
+            <img [src]="details[0].imageUrl" />
+            <h2>{{details[0].description}}</h2>
         </div>
 </div>  

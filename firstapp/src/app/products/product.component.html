@@ -51,7 +51,8 @@
                                  [style.width.px]="imageSize"/>
                         </td>
                         <td style="color:blueviolet">
-                            <a [routerLink]="['/products', prod.productId ]">
+                            <a [routerLink]="['/products', prod.productId ]"
+                            >
                                 {{prod.productName | mycase:'lower':1}}
                             </a>
                             
@@ -74,3 +75,8 @@
         </ng-template>
     </div>
 </div>
+
+
+<!--
+    [queryParams]="{name:prod.productName,desc:prod.description,imgUrl:prod.imageUrl}"
+-->

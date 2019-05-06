@@ -26,6 +26,7 @@ export class ProductComponent implements OnInit {
     }
     products: IProduct[];
 
+
     toggleImage(): void {
         this.showImage = !this.showImage;
     }
