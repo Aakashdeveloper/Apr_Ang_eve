@@ -45,3 +45,11 @@ export class ProductComponent implements OnInit {
             .subscribe((data) => this.products = data);
     }
 }
+
+/*
+var add = (a) => { this.out = a*a }
+
+function add(a){
+    return a*a
+}
+*/

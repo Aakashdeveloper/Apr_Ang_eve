@@ -3,6 +3,37 @@
     Movies Page
   </div>
   <div class="panel-body">
-    Movies Content
+    <div *ngFor="let music of musicData">
+      <br/>
+      <button type="button" class="btn btn-info"
+        data-toggle="modal" [attr.data-target]="'#' + music.cover">
+          {{music.name}}
+      </button>
+
+      <!-- Modal -->
+      <div id="{{music.cover}}" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">{{music.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <p>{{music.bio}}</p>
+                <ul *ngFor="let album of music.albums">
+                  <li>{{album.title}}</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+    </div>
+    
   </div>
 </div>  

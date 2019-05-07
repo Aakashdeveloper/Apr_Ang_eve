@@ -19,6 +19,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { MoviesComponent } from './movies/movies.component';
 import { NotFoundComponent } from './shared/notFound.component';
 import { ProductDetailComponent } from './products/product-detail.component';
+import { MusicService } from './movies/music.service';
 
 @NgModule({
     // all module you will declare here
@@ -62,7 +63,8 @@ import { ProductDetailComponent } from './products/product-detail.component';
 
     // all services  declare here
     providers: [
-        ProductService
+        ProductService,
+        MusicService
     ]
 })
 
