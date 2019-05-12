@@ -24,7 +24,7 @@ export class StarComponent implements OnChanges, OnInit, OnDestroy {
 
     ngOnChanges() {
         console.log('>>>>>OnChanges<<<<<<');
-        this.starWidth = this.rating * 86 / 6;
+        this.starWidth = this.rating * 86 / 5.4;
     }
 
     ngOnDestroy() {
@@ -33,5 +33,9 @@ export class StarComponent implements OnChanges, OnInit, OnDestroy {
 
     onStar(): void {
         this.ratingClicked.emit(`Rating clicked is ${this.rating}`);
+    }
+
+    getColor() {
+        return this.rating > 4 ? '#@28a745' : (this.rating > 2.5) ? '#007bff' : 'teal';
     }
 }
