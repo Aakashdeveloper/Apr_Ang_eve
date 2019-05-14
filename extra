@@ -206,3 +206,10 @@ creating itself
 ng generate component home/ ng g c home
 ng g s myservice
 ng g p mypipe
+
+
+/************************
+    Classes to Validate
+*************************/
+ng-pristine  ng-untouched   ng-invalid
+ng-dirty     ng-touched     ng-valid
