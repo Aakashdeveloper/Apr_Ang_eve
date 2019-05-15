@@ -11,12 +11,12 @@ import { FormPosterService } from '../services/form-poster.service';
 export class CustomerFormComponent {
     constructor(private formPosterService: FormPosterService) {}
     languages: any[] = ['Angular', 'React', 'Node', 'python'];
-    mymodel = new CustomerModal('John', 'Eva', 'a@a.com', '12345', true, 'male', 'Angular');
+    mymodel = new CustomerModal('john', 'Eva', 'a@a.com', '12345', true, 'male', 'Angular');
 
     hasCodeLangError: boolean = false;
     firstToUpper(value: string): void {
         if (value.length > 0) {
-            this.mymodel.firstname = value.charAt(0).toUpperCase() + value.slice(1);
+            this.mymodel.firstname = value.charAt(0).toUpperCase();
         } else {
             this.mymodel.firstname = value;
         }
