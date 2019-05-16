@@ -30,3 +30,23 @@ module.exports = function (config) {
     restartOnFileChange: true
   });
 };
+
+
+function calculate(workers) {
+  let sal = [];
+  for(i=0; i< workers.length; i++) {
+     if(typeof workers[i] === 'string'){
+      worker = workers[i].split(' ');
+    if(worker[1] == "Contractor" ) {
+        if(!isNaN(worker[3])){
+          sal.push(worker[3] * worker[4] * 52)
+        }
+    } else {
+      
+        sal.push(parseInt(worker[3]))
+      
+    }
+    }
+  }
+  return sal.sort((a, b) => (a < b ? -1 : 1))
+}

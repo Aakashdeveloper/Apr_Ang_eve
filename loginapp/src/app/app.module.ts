@@ -10,6 +10,8 @@ import { FormLoginService } from './login-form/login.service';
 import { FormRegisterService } from './register-form/register.service';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LoginGaurdService } from './login-gaurd.service';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { ProfileComponent } from './profile/profile.component';
   ],
   providers: [
     FormLoginService,
-    FormRegisterService
+    FormRegisterService,
+    LoginGaurdService
   ],
   bootstrap: [AppComponent]
 })

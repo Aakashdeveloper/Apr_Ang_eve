@@ -5,10 +5,10 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 
 export class FormRegisterService {
-    private url = 'http://localhost:3100/postEmployee';
+    private url = 'http://localhost:5000/api/auth/register';
 
     constructor(private http: HttpClient) {}
-    postCustomer( register: Register) {
+    postUser(register: Register) {
         console.log('getting in service>>>', register);
         return this.http.post(this.url, register);
     }

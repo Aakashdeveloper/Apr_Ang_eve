@@ -9,9 +9,9 @@
                     FirstName
                 </label>
                 <input type="text" placeholder="firstName"
-                    class="form-control" id="fname" name="firstname"
+                    class="form-control" id="fname" name="name"
                     (ngModelChange)="firstToUpper($event)"
-                    [ngModel]="registermodel.firstname"
+                    [ngModel]="registermodel.name"
                     #firstName="ngModel"
                     required/>
                 <div class="alert alert-danger" *ngIf="firstName.invalid">
